@@ -1,0 +1,123 @@
+@import url('reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    /* Typography */
+    --ff: 'Inter', sans-serif;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Pixels to rem  */
+    --calc-0_5: 0.5rem;
+    /* 8px */
+
+    --calc-0_75: 0.75rem;
+    /* 12px */
+
+    --calc-0_875: 0.875rem;
+    /* 14px */
+
+    --calc-1: 1rem;
+    /* 16px */
+
+    --calc-1_5: 1.5rem;
+    /* 24px */
+
+    --calc-2_5: 2.5rem;
+    /* 40px */
+
+    --calc-5_5: 5.5rem;
+    /* 88px */
+
+    --calc-24: 24rem;
+    /* 384px */
+
+    --calc-38_188: 38.188rem
+    /* 611px */
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-size: var(--calc-0_875);
+    color: var(--white);
+    text-align: center;
+    line-height: 150%;
+    font-weight: var(--fw-regular);
+}
+
+body {
+    background-color: var(--stone-100);
+    min-height: 100vh;
+    background-color: var(--grey-900);
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--grey-800);
+    border-radius: var(--calc-0_75);
+    padding: var(--calc-2_5);
+    width: var(--calc-24);
+    height: var(--calc-38_188);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: var(--calc-5_5);
+    height: var(--calc-5_5);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+h1
+{
+    font-weight: var(--fw-semibold);
+    font-size: var(--calc-1_5);
+    margin-bottom: 4px;
+}
+
+h2
+{
+    color: var(--green);
+    font-weight: var(--fw-bold);
+
+}
+
+h2,h3
+{
+    font-size: var(--calc-0_875);
+}
+
+.socials
+{
+    width: 100%;
+}
+
+
+li
+{
+    background-color: var(--grey-700);
+    border-radius: var(--calc-0_5);
+    font-weight: var(--fw-bold);
+    width: 100%;
+    padding-top: var(--calc-0_75);
+    padding-bottom: var(--calc-0_75);
+}
+
+li:not(:last-child)
+{
+    margin-bottom: var(--calc-1);
+}
