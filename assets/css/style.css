@@ -116,9 +116,18 @@ li
     width: 100%;
     padding-top: var(--calc-0_75);
     padding-bottom: var(--calc-0_75);
+    transition: all 0.5s ease-in-out;
+
 }
 
 li:not(:last-child)
 {
     margin-bottom: var(--calc-1);
+}
+
+li:hover
+{
+    cursor: pointer;
+    color: var(--grey-700);
+    background-color: var(--green);
 }
