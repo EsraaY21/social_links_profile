@@ -60,6 +60,7 @@ body {
     background-color: var(--grey-900);
     display: grid;
     place-items: center;
+    padding: var(--calc-1_5);
 }
 
 .card {
